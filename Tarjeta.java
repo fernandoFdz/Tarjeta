@@ -1,7 +1,7 @@
 public class Tarjeta{
     private float saldo();
-    public tarjeta{
-        saldo=0;
+    public Tarjeta(){
+        saldo = 0;
     }
     
     public void depositar(float dinero){
@@ -11,9 +11,10 @@ public class Tarjeta{
     public float retirar(float dinero){
         if(saldo>=dinero){
             saldo=saldo-dinero;
-        }return dinero;
-        else 
+        return dinero;}
+        else{
         return 0;
+        }
     }
     
     public void consulta(float dinero){
